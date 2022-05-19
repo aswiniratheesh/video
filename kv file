@@ -1,0 +1,27 @@
+<Demoproject>:
+    Screen:
+        name:"screen_2917"
+        canvas.before:
+            Color:
+                rgba:(1.0,1.0,1.0,1.0)
+            Rectangle:
+                pos:self.pos
+                size:self.size
+        BoxLayout:
+            orientation:"vertical"
+            BoxLayout:
+                orientation:"vertical"
+                padding:dp(20),dp(20),dp(20),dp(20)
+                color:(1,0,0,1)
+                canvas:
+                    Color:
+                        rgb: [.10, .10, .10]
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+                VideoPlayer:
+                    source:'video.mp4'
+                    state:'play'
+                    options:{'allow_stretch': True}
+                    size_hint:(None,None)
+                    size:(250,200)
